@@ -1,11 +1,5 @@
 <template>
   <div id="app">
-    <!-- <div id="nav"> -->
-      <!-- <img src="./assets/logo.png" alt=""> -->
-      <!-- <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/services">Services</router-link> -->
-    <!-- </div> -->
     <router-view/>
   </div>
 </template>
@@ -21,7 +15,7 @@
 }
 
 #nav {
-  padding: 30px;
+  padding: 0px;
 }
 
 #nav a {
@@ -32,4 +26,6 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+
 </style>

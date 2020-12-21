@@ -7,6 +7,18 @@ Vue.use(VueRouter)
 
 const routes = [{
         path: '/',
+        name: 'Preloader',
+        component: () =>
+            import ( /* webpackChunkName: "Preloader" */ '../views/Preloader.vue')
+    },
+    {
+        path: '/prueba',
+        name: 'Prueba',
+        component: () =>
+            import ( /* webpackChunkName: "Prueba" */ '../views/pruebas.vue')
+    },
+    {
+        path: '/inicio',
         name: 'Inicio',
         component: () =>
             import ( /* webpackChunkName: "Inicio" */ '../views/Inicio.vue')

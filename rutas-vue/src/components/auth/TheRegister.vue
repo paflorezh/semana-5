@@ -21,7 +21,7 @@
                     <div class="datos">
                         <div class="form_d">
                             <div class="div_datos">
-                                <input v-model="register.name" type="text" placeholder="Nombre de Usuario" class="entrada" style="background-image: url(../../assets/5.png); background-position: 0px 0px;background-repeat: no-repeat;
+                                <input v-model="register.nombre" type="text" placeholder="Nombre de Usuario" class="entrada" style="background-image: url(../../assets/5.png); background-position: 0px 0px;background-repeat: no-repeat;
 				    		 padding-left: 40px ;
 				    		">
                                 <input v-model="register.rol" type="text" placeholder="Rol" class="entrada">
@@ -58,7 +58,7 @@ export default {
     data(){
         return{
             register:{
-                name: "",
+                nombre: "",
                 password: "",
                 email: "",
                 rol: ""

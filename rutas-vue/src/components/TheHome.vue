@@ -2,7 +2,7 @@
   <div>
     <!-- Image and text -->
     <nav class="navbar texto-superior barra-superior">
-      <img src="../assets/logo.png" width="100" height="100" class="d-inline-block align-top" alt="" loading="lazy">
+      <img src="../assets/presto.png" width="100" height="100" class="d-inline-block align-top" alt="" loading="lazy">
       <h1 class="navbar-brand" href="#">
         {{ user.name }} <hr> {{ user.email }}
       </h1>
