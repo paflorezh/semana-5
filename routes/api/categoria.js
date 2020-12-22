@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const models = require('../../models');
-const MiController = require('../../controllers/UsuarioController.js');
+const categoriaController = require('../../controllers/categoriaController.js');
 const bcrypt = require('bcryptjs');
 const auth = require('../../middlewares/auth')
 
@@ -23,9 +23,11 @@ const auth = require('../../middlewares/auth')
 //.com/api/usuario/listar
 //.com/api/usuario/login
 //.com/api/usuario/register
-router.get('/listar', auth.verificarAdministrador, MiController.listar)
-router.post('/login', MiController.login)
-router.post('/register', MiController.register);
+router.get('/list', categoriaController.list);
+router.post('/add', auth.verificarAdministrador, categoriaController.add);
+router.put('/update', auth.verificarAdministrador, categoriaController.update);
+router.put('/activate', auth.verificarAdministrador, categoriaController.activate);
+router.put('/deactivate', auth.verificarAdministrador, categoriaController.deactivate);
 // router.put('/actualizar', MiController.actualizar)
 
 

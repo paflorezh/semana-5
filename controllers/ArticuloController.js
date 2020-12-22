@@ -6,7 +6,12 @@ const models = require('../models');
 
 exports.list = async(req, res, next) => {
     try {
-        const registro = await models.Articulo.findAll();
+        const registro = await models.Articulo.findAll({
+            include: [{
+                model: models.Categoria,
+                as: 'categoria'
+            }]
+        });
         if(registro){
             res.status(200).json(registro);
         }else{
@@ -38,7 +43,11 @@ exports.add = async(req, res, next) => {
 exports.update = async(req, res, next) => {
     try {
         
-            const registro = await models.Articulo.update({nombre: req.body.nombre, descripcion: req.body.descripcion, codigo: req.body.codigo},
+            const registro = await models.Articulo.update({
+                categoriaId: req.body.categoria,
+                descripcion: req.body.descripcion,
+                codigo: req.body.codigo
+            },
                 {
                     where: {
                         id: req.body.id
