@@ -33,7 +33,31 @@ const routes = [{
         path: '/register',
         name: 'Register',
         component: () =>
-            import ( /* webpackChunkName: "Login" */ '../views/Register.vue')
+            import ( /* webpackChunkName: "Register" */ '../views/Register.vue')
+    },
+    {
+        path: '/servicios',
+        name: 'Servicios',
+        component: () =>
+            import ( /* webpackChunkName: "Servicios" */ '../views/Servicios.vue')
+    },
+    {
+        path: '/servicios/servicio1',
+        name: 'Servicio1',
+        component: () =>
+            import ( /* webpackChunkName: "Servicio1" */ '../views/Servicio1.vue')
+    },
+    {
+        path: '/servicios/servicio2',
+        name: 'Servicio2',
+        component: () =>
+            import ( /* webpackChunkName: "Servicio2" */ '../views/Servicio2.vue')
+    },
+    {
+        path: '/servicios/servicio3',
+        name: 'Servicio3',
+        component: () =>
+            import ( /* webpackChunkName: "Servicio3" */ '../views/Servicio3.vue')
     },
     {
         path: '/home',

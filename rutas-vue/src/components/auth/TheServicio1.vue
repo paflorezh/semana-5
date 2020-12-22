@@ -1,5 +1,5 @@
 <template>
-    <div id="pagina" >
+    <div>
         <!-- Inicia Header -->
         <header>
             <nav id="nav" class="nav1">
@@ -26,10 +26,10 @@
                     </div>
                 </div>
             </nav>
-	    </header>
+        </header>
         <!-- Finaliza Header -->
 
-        <!-- Inicia Iniciar Sesion -->
+       <!-- Inicia Iniciar Sesion -->
 
         <div class="modal-container1 w3-container w3-center w3-animate-top" v-if="sesion">
             <div class="modal1 modal-close">
@@ -97,14 +97,11 @@
                                 padding-left: 40px ;
                                 "
                                 >
-                            </div>
-                            <div class="div_datos">
-                                <input v-model="register.email" type="text" placeholder="Correo Electronico" class="entrada">
-                                <input v-model="register.password" type="password" placeholder="Contraseña" class="entrada"
-                                style="background-image: url(../../assets/6.png); background-position: 0px 0px;background-repeat: no-repeat;
-                                padding-left: 40px ;
-                                ">
-                            </div>
+                                </div>
+                                <div class="div_datos">
+                                    <input v-model="register.email" type="text" placeholder="Correo Electronico" class="entrada">
+                                    <input v-model="register.password" type="password" placeholder="Contraseña" class="entrada">
+                                </div>
                             </div>
                         </div>
                         <div class="wRegistro">
@@ -148,214 +145,241 @@
         </div>
         <!-- Termina Servicios -->
 
-        <!-- Inicia Carousel -->
-        <div id="demo" class="carousel slide" data-ride="carousel">
-            <ul class="carousel-indicators" style="background:  #FF0038;">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
-                <li data-target="#demo" data-slide-to="3"></li>
-                <li data-target="#demo" data-slide-to="4"></li>
-                <li data-target="#demo" data-slide-to="5"></li>
-            </ul>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../../assets/14.jpeg" alt="Los Angeles" width="1100" height="300">
-                    <div class="carousel-caption">
-                        <p class="txt_c">En la logistica, el espacio es una sustitucion de la inteligencia.</p>
-                    </div>   
-                </div>
-                <div class="carousel-item">
-                    <img src="../../assets/15.jpg" alt="Chicago" width="1100" height="300">
-                    <div class="carousel-caption">
-                        <p class="txt_c">En la logistica, el espacio es una sustitucion de la inteligencia.</p>
-                    </div>   
-                </div>
-                <div class="carousel-item">
-                    <img src="../../assets/16.jpg" alt="New York" width="1100" height="300">
-                    <div class="carousel-caption">
-                        <p class="txt_c">En la logistica, el espacio es una sustitucion de la inteligencia.</p>
-                    </div>   
-                </div>
-                <div class="carousel-item">
-                    <img src="../../assets/17.png" alt="New York" width="1100" height="300">
-                    <div class="carousel-caption">
-                        <p class="txt_c">En la logistica, el espacio es una sustitucion de la inteligencia.</p>
-                    </div>   
-                </div>
-                <div class="carousel-item">
-                    <img src="../../assets/18.jpg" alt="New York" width="1100" height="300">
-                    <div class="carousel-caption">
-                        <p class="txt_c">En la logistica, el espacio es una sustitucion de la inteligencia.</p>
-                    </div>   
-                </div>
-                <div class="carousel-item">
-                    <img src="../../assets/19.jpg" alt="New York" width="1100" height="300">
-                    <div class="carousel-caption">
-                        <p class="txt_c">En la logistica, el espacio es una sustitucion de la inteligencia.</p>
-                    </div>   
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div> 
-        <!-- Finaliza Carousel -->
-        <!-- Inicia Beneficios -->
-        <section class="contenedor">
-            <p class="principal">Presto te brinda grandes beneficios en logistica</p>
-            <div class="contenedor-2">
-                <div class="beneficios">
-                    <div class="imagen1">
-                        <img class="img1" src="../../assets/7.png">
-                    </div>
-                    <div class="texto">
-                        <br><h1 class="azul">Tiempo<br>y Costo</h1><br>
-                        <p class="text">Reducir los costes de transporte, realizando agrupación de cargas y minimizando etapas y distancias en el recorrido.</p>
-                    </div>
-                </div>
-                <div class="beneficios">
-                    <div class="imagen1">
-                        <img class="img1" src="../../assets/10.png">
-                    </div>
-                    <div class="texto">
-                        <br><h1 class="amarillo">El medio<br>ambiente</h1><br>
-                        <p class="text">El cuidado del medio ambiente es uno de los objetivos de la logística cada vez más presente.</p>
-                    </div>
-                </div>
-                <div class="beneficios">
-                    <div class="imagen1">
-                        <img class="img1" src="../../assets/1.png">
-                    </div>
-                    <div class="texto">
-                        <br><h1 class="azul">Clientes<br>Felices </h1><br>
-                        <p class="text">Lograr tener una buena relación logística entre la relación con los clientes y los proveedores.</p>
-                    </div>
-                </div>
-            </div>	
-	    </section>
-        <!-- Termina Beneficios -->
-        <!-- Inicia Equipo -->
-        <section class="contenedor">
-            <div class="contenedor-2">
-                <div class="herramienta">
-                    <div class="imagen">
-                        <img class="img" src="../../assets/alex.jpeg">
-                    </div>
-                </div>
-                <div class="herramienta2">
-                    <div class="imagen">
-                        <img class="img" src="../../assets/richard.jpg">
-                    </div>
-                </div>
-                <div class="herramienta1">
-                    <div class="imagen">
-                        <a href="herramientas.html" target="_blank">
-                            <img class="img" src="../../assets/12.png">
-                        </a>
-                    </div>
-                </div>
-                <div class="herramienta">
-                    <div class="imagen">
-                        <img class="img" src="../../assets/nayis.jpeg">
-                    </div>
-                </div>
-                <div class="herramienta2">
-                    <div class="imagen">
-                        <img class="img" src="../../assets/will.png">
-                    </div>
-                </div>
-            </div>
-            <!--nombres -->
-            <div class="contenedor-22">
-                <div class="nombre">
-                    <div >
-                        <h1 class="imagen">ALEXANDER</h1>
-                    </div>
-                </div>
-                <div class="nombre2">
+        <div class="contener">
+        <!--Encabezado-->
+                <div class="encabezado2">
                     <div>
-                        <h1 class="imagen">RICHARDD</h1>
+                        <img class="ade" src="../../assets/2.png">
+                    </div>
+                    <p class="lineas"></p>
+                    <div class="tituloU">
+                        <p class="tituloP">¿CÓMO PODRÍAMOS OPTIMIZAR LOS TIEMPOS DE LOGÍSTICA EN NUESTRA ORGANIZACIÓN?</p>
                     </div>
                 </div>
-                <div class="herramienta1">
-                    <div class="imagen">
-                        <p class="principal"> EQUIPO</p>
+                <!--Fin de encabezado-->
+                <div class="titulo_azul">
+                            <h1 class="titulo_azul_U">Soluciòn</h1>
+                        </div>
+                <!--Inicio de contenedor-->
+                <div class="contenedor2">
+
+                    <!--Circulo azul-->
+                    <div class="cir_azul">
+                        <div class="cir_sombra">
+                            <img class="img" src="../../assets/20.png">
+                        </div>	
                     </div>
-                </div>
-                <div class="nombre">
-                    <div >
-                        <h1 class="imagen">NAYIBE</h1>
-                    </div>	
-                </div>
-                <div class="nombre2">
-                    <div >
-                        <h1 class="imagen">WILL</h1>
-                    </div>
-                </div>
-            </div>
-	    </section>
-        <!-- Finaliza Equipo -->
-        <!-- Inicia Footer -->
-        <footer>
-            <div class="fazul">
-                <div class="contAzul">
-                    <img class="final" src="../../assets/6.png">
-                    <div>
-                        <h1 class="tFinal">SERVICIOS</h1><br>
-                        <ul class="flis">
-                            <li>GPS</li>
-                            <li>Bodegas</li>
-                            <li>Transporte</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h1 class="tFinal">COMUNICARSE</h1><br>
-                        <ul class="flis">
-                            <li>Póngase  en contacto</li>
-                            <li>Comentarios</li>
-                            <li>Redes sociales</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h1 class="tFinal">POLITICAS</h1><br>
-                        <ul class="flis">
-                            <li>Privacidad</li>
-                            <li>Agradecimientos</li>
-                            <li>Licencias</li>
-                        </ul>
-                    </div>
-                        <div class="famarilo">
-                        <div class="cont-text">
-                        <h1 class="tFinal">ACERCA DE </h1><br>
-                        <p class="pFinal">Toda actividad  convive con diversos factores que influyen en su rendimiento y competitividad. Entender los objetivos de la logística es la clave para marcar la diferencia.</p>
-                        <div class="redes">
-                            <a href="https://github.com/paflorezh/semana-4.git" title=""><i class="fab fa-github"></i></a>
+                    <!--Fin circulo azul-->
+
+                    <!--Inicio titulo-caja azul-->
+                    <div class="caja_titu_cuad">
+
+                        <!--Titulo azul-->
                         
+
+                        <!--Cuadro de texto-->
+                        <div class="cuad_azul">
+                            <div class="cuad_sombra1">
+                                <div class="caja_txt_1">
+                                    <p class="txt_1_U">Gestionar las entregas de la mercancía por medio de un software
+        encargado de manejar la logística a través de GPS instalados en los vehículos de transporte.</p>
+                                </div>
+                            </div>
                         </div>
-                        </div>
-                        
-                        <div class="imaF">
-                        <img class="final2" src="../../assets/4.png">
-                        </div>
+                        <!--Fin cuadro de texto-->
+
                     </div>
+                    <!--Fin titulo-caja azul-->
+
                 </div>
-                <p class="linea"></p>
-            </div>
-	    </footer>
+                <!--Fin contenedor azul-->
+                
+        <!--Titulo naranja-->
+                        <div class="titulo_naranja">
+                            <h1 class="titulo_naranja_U">Descripciòn del Servicio</h1>
+                        </div>
+                <!--Inicio contenedor naranja-->
+                <div class="contenedor2">
+                    <!--Inicio titulo-caja naranja-->
+                    <div class="caja_titu_cuad">
+
+                        
+                        <!--Fin titulo naranja-->
+
+                        <!--Caja de texto-->
+                        <div class="cuad_naranja">
+                            <div class="cuad_sombra">
+                                <div class="caja_txt_1">
+                                    <p class="txt_1_U">Con el sistema para operadores logísticos por medio de GPS se monitoriza la entrada y salida
+        de mercancía del almacén y su ubicación actual. Se podrá ver en todo momento lo que está
+        sucediendo, ya que el sistema controla el stock en tiempo real, monitorizando la
+        trazabilidad de la mercancía desde el almacén hasta su destino. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fin caja de texto-->
+
+                    </div>
+                    <!--Fin titulo-caja naranja-->
+
+
+                    <!--Circulo naranja-->
+                    <div class="cir_naranja">
+                        <div class="cir_sombra">
+                            <img class="img" src="../../assets/21.png">
+                        </div>	
+                    </div>
+                    <!--Fin circulo naranja-->
+
+                </div>
+                <!--Fin contenedor naranja-->
+                <!--Inicio contenedor naranja-->
+                <div class="contenedor2">
+                    <!--Inicio titulo-caja naranja-->
+                    <div class="caja_titu_cuad">
+
+                        
+                        <!--Fin titulo naranja-->
+
+                        <!--Caja de texto-->
+                        <div class="cuad_naranja">
+                            <div class="cuad_sombra">
+                                <div class="caja_txt_1">
+                                    <p class="txt_1_U">El software proporciona
+        informes de expedición de la mercancía durante todo el trayecto: desde que sale del
+        almacén hasta que llega al destinatario. Además, se enviará un aviso al responsable en
+        tiempo real si sucede algún imprevisto. Todo esto conlleva a la optimización todos los
+        recursos al alcance aumentando los beneficios y la eficiencia en los tiempos de entrega de
+        la mercancia.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fin caja de texto-->
+
+                    </div>
+                    <!--Fin titulo-caja naranja-->
+                    
+
+                    <!--Circulo naranja-->
+                    <div class="cir_naranja">
+                        <div class="cir_sombra">
+                            <img class="img" src="../../assets/22.png">
+                        </div>	
+                    </div>
+                    <!--Fin circulo naranja-->
+
+                </div>
+                <!--Fin contenedor naranja-->
+        <!--Titulo azul-->
+                        <div class="titulo_azul">
+                            <h1 class="titulo_azul_U">Caso de Exitò</h1>
+                        </div>
+
+                <!--Inicio de contenedor-->
+                <div class="contenedor2">
+
+                    <!--Circulo azul-->
+                    <div class="cir_azul">
+                        <div class="cir_sombra">
+                            <img class="img" src="../../assets/23.png">
+                        </div>	
+                    </div>
+                    <!--Fin circulo azul-->
+
+                    <!--Inicio titulo-caja azul-->
+                    <div class="caja_titu_cuad">
+
+                        
+                        <!--Cuadro de texto-->
+                        <div class="cuad_azul4">
+                            <div class="cuad_sombra4">
+                                <div class="caja_txt_1">
+                                    <p class="txt_1_U">TRAJOMAN
+        Fundada en 1980, Trajoman lleva más de 30 años desarrollando la actividad de transportista
+        y agencia de transporte de carga completa en la modalidad de transporte de contenedores
+        en el Puerto de Valencia.<br>
+        Con el alto volumen de actividad diaria y la variedad de carga que transportan sus vehículos,
+        es necesario tener controlada la mercancía a lo largo de todo el trayecto para ofrecer a sus
+        clientes un servicio óptimo.<br>
+        Trajoman acudió a servicio de gestión de entregas por medio de GPS hace más de 5 años,
+        con el objetivo de perfeccionar el servicio que le daban a sus clientes, indicándoles en todo
+        momento dónde estaba su mercancía y consiguiendo que esta llegara en perfectas
+        condiciones a destino.<br>
+        “Acudimos e instalamos los dispositivos de localización en los vehículos de transporte para
+        poder dar una garantía a nuestros clientes”. Pero no solo ha mejorado el servicio a sus
+        clientes, con la solución también han agilizado el reparto de tareas a sus propios
+        conductores, evitando llamadas de teléfono y demás procesos que afectan directamente a
+        la productividad de la empresa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fin cuadro de texto-->
+
+                    </div>
+                    <!--Fin titulo-caja azul-->
+
+                </div>
+                <!--Fin contenedor azul-->
+        </div>
+	
+		<!-- footer-->
+	<footer class="conten">
+		<div class="fazul">
+			<div class="contAzul">
+				<img class="final" src="../../assets/6.png">
+			<div>
+				<h1 class="tFinal">SERVICIOS</h1><br>
+				<ul class="flis">
+					<li>GPS</li>
+					<li>Bodegas</li>
+					<li>Transporte</li>
+				</ul>
+			</div>
+			<div>
+				<h1 class="tFinal">COMUNICARSE</h1><br>
+				<ul class="flis">
+					<li>Póngase  en contacto</li>
+					<li>Comentarios</li>
+					<li>Redes sociales</li>
+				</ul>
+			</div>
+			<div>
+				<h1 class="tFinal">POLITICAS</h1><br>
+				<ul class="flis">
+					<li>Privacidad</li>
+					<li>Agradecimientos</li>
+					<li>Licencias</li>
+				</ul>
+			</div>
+			<div class="famarilo">
+				<div class="cont-text">
+				<h1 class="tFinal">ACERCA DE </h1><br>
+				<p class="pFinal">Toda actividad  convive con diversos factores que influyen en su rendimiento y competitividad. Entender los objetivos de la logística es la clave para marcar la diferencia.</p>
+				<div class="redes">
+		
+				<a href="https://github.com/paflorezh/semana-4.git" title=""><i class="fab fa-github"></i></a>
+				
+				</div>
+				</div>
+				
+				<div class="imaF">
+				<img class="final2" src="../../assets/4.png">
+				</div>
+				
+				
+			
+				
+				</div>
+			</div>
+			<p class="linea"></p>
+		</div>
+	</footer>
     </div>
 </template>
 
 <script>
-
-
-import swal from 'sweetalert';
-
 export default {
-    name: 'ThePrueba',
+    name: 'TheServicio1',
     data() {
         return {
             sesion: false,
@@ -367,15 +391,12 @@ export default {
                 email: "",
             },
             login:{
-                email: "",
+                email:"",
                 password:""
             }
         }
     },
     methods:{
-        async services(){
-            this.$router.push('/servicios/servicio1');
-        },
         async loginUser(){
             try{
                 let response = await this.$http.post('/api/usuario/login', this.login)
@@ -414,10 +435,6 @@ export default {
         },
     }
 }
-
-
-
-
 </script>
 
 <style scoped>
@@ -1074,7 +1091,9 @@ span{
     align-items: flex-end;
 }
 
-/* Estilos Header */
+
+
+/* Estilo Header */
 header{
   width: 100%;
   height:90px;
@@ -1145,171 +1164,200 @@ nav .enlaces a:hover{
 	font-size:15px;
 }
 
-/* Estilos Carousel */
-.carousel{
-	width: 800px;
-	height: 400px;
-	margin-left: 20%;
-	margin-top: 50px;
+/* Estilo Servicio */
+
+.contener{
+	margin-bottom: 20px;
+}
+.conten{
+	margin-top: 600px;
+}
+.encabezado2{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 150px;
+	
+}
+.ade{
+	width: 300px;
+	height: 200px;
 }
 
-.carousel-inner img {
-    width: 800px;
-    height: 400px;
-    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))) 
+.lineas{
+	content: '';
+	width: 600px;
+	height: 4px;
+	background:  #FF0038;
+	margin: auto;
 }
 
-.txt_c{
-  	font-size: 40px;
-  	text-align: center;
-  background: rgb(200,199,199,.6);
-  color:#243755;
+.tituloU{
+	
+	margin-bottom: 80px;
+
 }
-
-
-/* Estilos Beneficios */
-
-.contenedor{
-  margin:auto;
-  padding: 60px 0;
-  text-align: center;
-  overflow: hidden;  
-}
-
-.contenedor-2{
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-around; 
-  flex-wrap: wrap;
-}
-
-.principal{
+.tituloP{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 30px;
-	font-weight: 300;
-    color: #000
+	margin-top: 10px;
 }
 
-.beneficios{
-  margin-top: 20px;
-  padding: 10px;
-  background:#F8FBFD; 
-  width: 30%;
-  box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
-  overflow: hidden;
-  height:500px;
-  margin-bottom: 20px;
+
+/**Sirve para naranja y azul**/
+.contenedor2{
+	justify-content: center;
+	display: flex;
+	margin-bottom: 100px;
 }
 
-.texto{
-  padding: 5px 20px;
-  width: 90%;
-  height: 210px;
-  text-align: justify;
-  background: #fff;
-  margin-top: -40px;
-  margin-left: 20px;
-  margin-right: 5px;
-}
-
-.imagen1{
-	text-align:right;	
-}
-
-.img1{
+.cuad_sombra{
+	width: 600px;
 	height: 300px;
-	width: 300px;
+	background-color: #F5F5F5;
+	margin-left: -5px;
+	margin-top: -5px;
+	align-items: center;
+	display: flex;
+	box-shadow: 0 0 10px rgb(0,0,0,.4);
 }
-
-.azul{
-	font-family: 'Open Sans', sans-serif;
-	color: #046EC2;
-	font-size: 22px;
+.cuad_sombra1{
+	width: 600px;
+	height: 150px;
+	background-color: #F5F5F5;
+	margin-left: -5px;
+	margin-top: -5px;
+	align-items: center;
+	display: flex;
+	box-shadow: 0 0 10px rgb(0,0,0,.4);
 }
-
-.amarillo{
-	font-family: 'Open Sans', sans-serif;
-	color:#FF0038;
-	font-size: 22px;
+.cuad_sombra4{
+	width: 600px;
+	height: 650px;
+	background-color: #F5F5F5;
+	margin-left: -5px;
+	margin-top: -5px;
+	align-items: center;
+	display: flex;
+	box-shadow: 0 0 10px rgb(0,0,0,.4);
 }
-
-
-/* Estilos Herramientas */
-
-.herramienta{
-  margin-top: 20px;
-  padding: 10px;
-  width: 250px;
-  overflow: hidden;
-  height:300px;
- display: flex;
- align-items: center;
- justify-content: center;
-  background: #FF0038;
-  text-align: center;
+.caja_txt_1{
+	margin-left: 4px;
+	padding: 10px 10px;
+	
 }
-
-.herramienta2{
-  margin-top: 20px;
-  padding: 10px;
-  width: 250px;
-  overflow: hidden;
-  height:300px;
- display: flex;
- align-items: center;
- justify-content: center;
-  background: #046EC2;
-  text-align: center;
-}
-
-.herramienta1{
-  margin-top: 20px;
-  padding: 10px;
-  width: 250px;
-  overflow: hidden;
-  height:300px;
-  text-align: center;
-}
-
-.img{
-	width: 250px;
-	height: 250px;
-}
-
-.nombre{
-  margin-top: 20px;
-  padding: 10px;
-  width: 250px;
-  overflow: hidden;
-  height:50px;
-  background: #FF0038;
-  text-align: center;
-}
-
-.nombre2{
-  margin-top: 20px;
-  padding: 10px;
-  width: 250px;
-  overflow: hidden;
-  height:50px;
-  background:#046EC2;
-  text-align: center;
-}
-
-.contenedor-22{
-  margin-top:-5px; 
-  display: flex;
-  justify-content: space-around; 
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-  height:  90px;
-  color: #fff;
-}
-
-.imagen{
-	font-family: 'Open Sans', sans-serif;
+.txt_1_U{
+	font-weight: 300;
 	font-size: 20px;
+	text-align: justify;
 }
+
+.cir_sombra{
+		width: 280px;
+		height: 280px;
+		border-radius: 145px;
+		background-color: #F5F5F5;
+		margin-left: 4px;
+		margin-top: 4px;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		box-shadow: 0 0 10px rgb(0,0,0,.4);
+	}
+
+
+/**Contenedor azul**/
+	/**Circulo azul**/
+
+	.cir_azul{
+		width: 300px;
+		height: 300px;
+		border-radius: 150px;
+		background-color: #046EC2; 
+
+	}
+
+	.img{
+		width: 230px;
+		height: 215px;
+		
+	}
+	/**Fin circulo azul**/
+
+	/**Cuadro de texto azul**/
+	.caja_titu_cuad{
+		margin-left: 80px;
+		margin-right: 80px;
+		height: 30px;
+
+	}
+
+	.titulo_azul{
+		background-color:none;
+		font-family: 'Sans Serif', sans-serif;
+		color: #046EC2;
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.titulo_azul_U{
+		font-size: 40px;
+		font-weight: 700;
+	
+	}
+
+	.cuad_azul{
+		background-color:  #046EC2;
+		width: 600px;
+		height: 150px;
+		display: flex;
+		font-family: 'Open sans', sans-serif;
+	}
+	.cuad_azul4{
+		background-color:  #046EC2;
+		width: 600px;
+		height: 650px;
+		display: flex;
+		font-family: 'Open sans', sans-serif;
+	}
+	/**Fin cuadro de texto azul**/
+
+/**Fin contenedor azul**/
+
+/**---------------------------------------------------**/
+
+/**Contenedor naranja**/
+	/**Cuadro de texto naranja**/
+	
+	.titulo_naranja{
+		background-color:none;
+		font-family: 'Sans Serif', sans-serif;
+		color: #FF0038;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.titulo_naranja_U{
+		font-size: 40px;
+		font-weight: 700;
+	}
+	.cuad_naranja{
+		background-color: #FF0038;
+		width: 600px;
+		height: 300px;
+		display: flex;
+		font-family: 'Open sans', sans-serif;
+	}
+	/**Fin cuadro de texto**/
+
+	/**Circulo naranja**/
+	.cir_naranja{
+		width: 300px;
+		height: 300px;
+		border-radius: 150px;
+		background-color: #FF0038;
+	}
+	/**Fin circulo naranja**/
+
+
 
 
 /* Estilos Footer */
@@ -1397,4 +1445,5 @@ nav .enlaces a:hover{
     margin-top: 20px;
     font-size: 40px;
 }
+
 </style>

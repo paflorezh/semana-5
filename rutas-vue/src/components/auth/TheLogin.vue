@@ -1,10 +1,6 @@
 <template>
-<div class="w3-container w3-center w3-animate-top">
-    <!-- <div class="container"> -->
-    <!-- <img src="../../richard.jpg" alt=""> -->
+<div class="w3-container w3-center w3-animate-top" id="iniciar_sesion">
         <div class="modal-container">
-            <!-- <div class="modal modal-close"> -->
-                <!-- <span class="close"> <i class="fab fa-times"></i></span> -->
                 <button @click.prevent="inicio" type="button" class="close" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -22,11 +18,8 @@
                         height: 42px;background: #F5F5F5;outline: none; background-image: url(../../5.png); background-position: 0px 0px;background-repeat: no-repeat; " class="usuarioo" type="text" placeholder="Email" name="">
                         <input v-model="login.password" type="password" placeholder="Contraseña" name="">
                         <h1 class="wSesion">
-                            
                             <button class="btn btn-primary" @click.prevent="loginUser" type="submit">continuar</button>
-                        
                             <p class="ttNoCuentaS">¿No tienes una cuenta? <a href="/register" @click.prevent="register" class="linkRegistro">registrate</a></p>
-
                         </h1>
                         <div class="imgSesionIzq" style="text-align: left;">
                             <img class="" src="../../assets/3.png" alt="" width="230">
@@ -39,13 +32,7 @@
                     <!--Fin formulario-->
                 </div>
                 <!--Fin contenedor principal-->				
-            <!-- </div> -->
-            <!-- <pre>
-                {{ login.email }}
-                {{ login.password }}
-            </pre> -->
         </div>
-    <!-- </div> -->
 </div>
 </template>
 
